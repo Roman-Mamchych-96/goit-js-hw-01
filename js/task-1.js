@@ -1,11 +1,10 @@
 function makeTransaction(quantity, pricePerDroid) {
-    const allPrize = quantity * pricePerDroid;
-    const newRezaultsecond = `You ordered ${quantity} droids worth ${allPrize} credits!`;
+    
+    const allPrice = quantity * pricePerDroid;
+    return `"You ordered ${quantity} droids worth ${allPrice} credits!"`
 
-    console.log(newRezaultsecond);
-    return
 }
-makeTransaction(5, 3000)
-makeTransaction(3, 1000)
-makeTransaction (10, 500)
 
+console.log(makeTransaction(5, 3000)); 
+console.log(makeTransaction(3, 1000)); 
+console.log(makeTransaction(10, 500)); 
